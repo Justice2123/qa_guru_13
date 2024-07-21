@@ -8,6 +8,7 @@ import pages.components.ModalWindow;
 import utils.TestData;
 
 import static io.qameta.allure.Allure.step;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("smoke")
 public class PageObjectSimpleTest extends TestBase {
@@ -97,6 +98,11 @@ public class PageObjectSimpleTest extends TestBase {
 
         modalWindow.modalWindowNotExist();
 
+    }
+
+    @Test
+    void failedTest() {
+        assertTrue(false);
     }
 
 
